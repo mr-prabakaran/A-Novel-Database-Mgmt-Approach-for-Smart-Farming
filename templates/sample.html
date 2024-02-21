@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Farming</title>
+  <!-- <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='number/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='number/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='number/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='number/css'>
+   -->
+
+   <link rel="stylesheet" href="../static/css/style2.css"> 
+</head>
+
+<body>
+ <div class="login">
+	<h3>A  NOVEL  DATABASE  MANAGEMENT  APPROACH  FOR  SMART  FARMING</h3>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      
+      <input type="float" name="Nitrogen" placeholder="Nitrogen" required="required" />
+      <input type="float" name="Phosphorus" placeholder="Phosphorus" required="required" />
+      <input type="float" name="Potassium" placeholder="Potassium" required="required" />
+      <input type="float" name="Temperature" placeholder="Temperature" required="required" />
+      <input type="float" name="Humidity" placeholder="Humidity" required="required" />
+      <input type="float" name="Soil pH" placeholder="Soil pH" required="required" />
+      <input type="float" name="Rainfall" placeholder="Rainfall" required="required" />
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+    </form>
+
+   <br>
+   <br>
+   <!-- {{ prediction_text }} -->
+   <h2 class="output">{{prediction_text}}</h2>
+
+ </div>
+
+
+</body>
+</html>

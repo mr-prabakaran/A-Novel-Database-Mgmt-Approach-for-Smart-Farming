@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background: url("https://cdn.lifestyleasia.com/wp-content/uploads/sites/6/2020/02/07160345/changluntwitter-1024x681.jpeg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+input[type="float"] {
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+} 
+
+input[type="float"]:focus {
+  outline: 2px dotted #fe6244;
+}
+
+.login {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+form {
+  display: grid;
+  grid-template-columns: minmax(150px, 200px);
+  gap: 15px;
+
+  margin-top: 80px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.btn-primary {
+ 
+  padding: 10px 10px;
+  background-color: rgba(2, 2, 2, 0.775);
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: rgba(0, 0, 0, 0.899);
+}
+.output {
+  margin-top: 10px;
+  background-color: hsla(108, 95%, 43%, 0.733);
+  color: #333;
+  color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+h3{
+  position: absolute;
+  top: 30px;
+  color: #ffffff;
+}
+
